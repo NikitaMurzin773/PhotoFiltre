@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="EHU-Ca-zCr" customClass="FiltreCellBladeRunner" customModule="PhotoFiltre90_s" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="155" height="155"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="6Pl-Ep-Rxj">
+                <rect key="frame" x="0.0" y="0.0" width="155" height="155"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bladeRunner" translatesAutoresizingMaskIntoConstraints="NO" id="bjg-39-VO0">
+                        <rect key="frame" x="0.0" y="30" width="155" height="127"/>
+                        <color key="tintColor" systemColor="systemGray6Color"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="155" id="511-3L-OA5"/>
+                            <constraint firstAttribute="height" constant="127" id="eQp-SF-aL8"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d7w-3L-TVG">
+                        <rect key="frame" x="0.0" y="0.0" width="155" height="35"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="gray" title="Blade Runner">
+                            <color key="baseForegroundColor" red="0.79215681550000006" green="0.42745098469999998" blue="0.63921570780000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <color key="baseBackgroundColor" red="0.32941177490000001" green="0.13333332540000001" blue="0.47843140360000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </buttonConfiguration>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="bjg-39-VO0" secondAttribute="trailing" id="JMa-I7-BEw"/>
+                    <constraint firstAttribute="bottom" secondItem="bjg-39-VO0" secondAttribute="bottom" id="R3V-x2-D0g"/>
+                    <constraint firstItem="bjg-39-VO0" firstAttribute="top" secondItem="6Pl-Ep-Rxj" secondAttribute="top" constant="30" id="ils-wo-Jdg"/>
+                    <constraint firstItem="bjg-39-VO0" firstAttribute="leading" secondItem="6Pl-Ep-Rxj" secondAttribute="leading" id="us4-cT-AFP"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="141" height="121"/>
+            <connections>
+                <outlet property="IconImageViewBR" destination="bjg-39-VO0" id="gX3-zb-wtx"/>
+                <outlet property="filtreButtonBR" destination="d7w-3L-TVG" id="73n-dt-elN"/>
+            </connections>
+            <point key="canvasLocation" x="-9.9236641221374047" y="48.943661971830991"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="bladeRunner" width="1280" height="720"/>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
